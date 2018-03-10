@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Chelsea+Market%7CKarma');
+
+h6 {
+  font-size: 20px;
+}
+
+form {
+  background-color: #EAF2F8;
+  padding-left: 30px;
+  padding-right: 10px;
+  padding-bottom: 800px;
+}
+
+.no-container {
+  padding-left: 10px;
+}
+
+.form-spacing {
+  padding-top: 15px;
+}
+
+.nav-spacing {
+  padding-top: 20px;
+  padding-bottom: 130px;
+  background-color: #EAF2F8;
+  font-size: 1.3em;
+  font-family: 'Chelsea Market', Georgia, serif;
+}
+
+.nav-spacing li {
+  border-top: 2px solid #F8F9F9;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.nav-spacing li:hover {
+  background-color: #EEEEEE;
+}
+
+.btn-style {
+  font-size: 1.2em;
+  width: 230px;
+}
+
+.pg-text {
+  font-size: 13px;
+}
+
+.title {
+ font-family: 'Chelsea Market', cursive;
+ color: #6495ED;
+ text-align: center;
+ font: linear-gradient(to top, #ffffff %, #00ffff 100%);
+}
+
+.p{
+ font-family: 'georgia, sanfs';
+ color:#708090;
+}
+
+.img-thumbnail{
+   align:center;
+}
+
+.links{
+ text-align: center;
+ color: #6495ED;
+ background: linear-gradient(to bottom, #ffffff %, #b0c4de 100%);
+}
+.footer {
+  margin-top: 70px;
+}
+
+.twitter-follow-button{
+  margin-right: 25px;
+  float: clear;
+}
+
+.page-styling {
+ line-height: 170%;
+}
+
+.page-spacing {
+ margin-top: 30px;
+}

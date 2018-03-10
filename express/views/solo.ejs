@@ -1,0 +1,50 @@
+<% include partials/header %>
+<h1 class="title page-header">Git Solo- Personal projects and posting to GitHub</h1>
+<h5 class= 'p page-styling'><ol>
+  <li>Open your Terminal</li>
+  <li>Go to your Desktop</li>
+  <kbd>cd desktop</kbd>
+  <li>Create an empty directory (we'll use the name GitFun)</li>
+  <kbd>mkdir funTimes</kbd>
+  <li>Add a file (.html, .css, .js, .ejs) (you can open text editor to make changes if you want)</li>
+  <kbd>touch index.html</kbd>
+  <li>Initialize an empty Git repository</li>
+  <kbd>git init</kbd>
+  <li>Look at the status of your files</li>
+  <kbd>git status</kbd>
+  <li>Add your changes to the staging area</li>
+  <kbd>git add index.html</kbd> (<kbd>git add .</kbd> will add all changes)
+  <li>Commit your staged changes</li>
+  <kbd>git commit -m”do NOT forget to include comment”</kbd>
+  <p style="color: red">If you forget to include a message and get stuck, type <kbd>:q!</kbd></p>
+  <li>Log onto your Github and make a new Github repository</li>
+  <li>Copy remote/push from GitHub page + paste on your terminal.</li>
+  <li>Refresh your GitHub page- should have ALL files loaded!</li>
+</ol>
+<p>Keep going...If you would like to continue to make changes to your file(s), follow these steps to learn how to commit those changes back on Github:</p>
+<ol start="12">
+  <li>Make changes on index.html (add code or comments) on your text editor and <kbd>cmd + S</kbd> to save files</li>
+  <li>Add changes to staging area</li>
+  <kbd>git add index.html</kbd>
+  <li>Commit your changes</li>
+  <kbd>git commit -m”do NOT forget to include comment”</kbd>
+  <li>Push your committed changes to Github</li>
+  <kbd>git push -u origin master</kbd>
+  <li>Refresh page + voila!</li>
+</ol></h5>
+<iframe src="https://giphy.com/embed/B0vFTrb0ZGDf2" width="480" height="253" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/city-bus-doll-B0vFTrb0ZGDf2"></a></p>
+
+<div class='footer'>
+  <div class='links'> Made with ♥ <a href="https://techtonica.org/">@Techtonica</a> by: </div>
+  <div class='links'>
+  <img src="./images/IMG_5650.png" width="200" height="200"/>
+  <img src="./images/IMG_8197.png" width="200" height="200"/>
+  <img src="./images/IMG_3098.png" width="200" height="200"/></br>
+
+  <a href="https://twitter.com/mmed1na?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-count="false">Follow @mmed1na</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+  <a href="https://twitter.com/patersonzaire?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-count="false">Follow @patersonzaire</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+  <a href="https://twitter.com/VivianSan21?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-count="false">Follow @VivianSan21</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+</div>
+<% include partials/footer %>

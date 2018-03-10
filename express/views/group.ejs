@@ -1,0 +1,54 @@
+<% include partials/header %>
+<h1 class="title page-header">Git Group- working with an immediate team.</h1>
+<h5 class= 'p page-styling'><ol>
+  <li>Go to the Github master repository you are cloning, and click clone then copy the URL</li>
+  <li>Open your terminal and go on your Desktop (if you wish to place the clone into another folder, go ahead and cd into that folder as well)<li>
+  <kbd>cd desktop</kbd>
+  <li>Clone the Github repository onto your computer</li>
+  <kbd>git clone <i>URL</i></kbd>
+  <li>Go into the folder that you just cloned</li>
+  <kbd>cd git-group-project</kbd>
+  <li>Create a branch to make edits</li>
+  <kbd>git branch myBranch</kbd>
+  <li>Switch to your newly created branch<li>
+  <kbd>git checkout myBranch</kbd>
+  <li>Open your text editor and make your changes; remember to save</li>
+  <li>Add changes to staging area</li>
+  <kbd>git add index.html</kbd>
+  <li>Commit your changes</li>
+  <kbd>git commit -m”do NOT forget to include comment”</kbd>
+  <li>Checkout to your master branch<li>
+  <kbd>git checkout master</kbd>
+  <li>Merge your branch with your master</li>
+  <kbd>git merge myBranch</kbd>
+  <li>Push your changes to your branch<li>
+  <kbd>git push origin myBranch</kbd>
+  <p style="color: red">** Here we are pushing the changes to the branch and not the origin master. We want to be able to create a pull request to the owner for the changes to be reviewed before being implemented.</p>
+</ol></h5>
+<h1 class="title page-header">Pulling the master repo</h1>
+<h5 class= 'p page-styling'><p>(assuming a couple of days have passed and the team has created/merged pull requests. Once the a pull request has been accepted and your branch has been merged with the origin master, you can delete the branch: <kbd>git branch -D myBranch</kbd>)</p>
+<ol>
+  <li>Make sure you cd into the project folder before following the steps below</li>
+  <li>Fetch the specified remote’s copy and immediately merge it into the local copy.</li>
+  <kbd>git pull origin master</kbd>
+  <li>Create a new branch to make edits, can be for specific reasons (i.e. creating a form)</li>
+  <kbd>git branch jen_add_form</kbd>
+  <li>Repeat Steps #7-16 from above</li>
+</ol></h5>
+<br>
+<h5><span class='p' style="color: red">Dealing with merge conflicts:</span> You WILL run into merge conflicts. In the case that this happens to you, remember to always commit your changes before pulling again.</h5>
+
+<div class='footer'>
+  <div class='links'> Made with ♥ <a href="https://techtonica.org/">@Techtonica</a> by: </div>
+  <div class='links'>
+  <img src="./images/IMG_5650.png" width="200" height="200"/>
+  <img src="./images/IMG_8197.png" width="200" height="200"/>
+  <img src="./images/IMG_3098.png" width="200" height="200"/></br>
+
+  <a href="https://twitter.com/mmed1na?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-count="false">Follow @mmed1na</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+  <a href="https://twitter.com/patersonzaire?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-count="false">Follow @patersonzaire</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+  <a href="https://twitter.com/VivianSan21?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-count="false">Follow @VivianSan21</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+</div>
+<% include partials/footer %>

@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Git Going</title>
+    <meta charset="utf-8">
+<!-- CSS CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+<!-- External CSS file  -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  </head>
+  <body>
+    <h1>Lets Git Going!</h1>
+    <p>This tutorial is for people who have a basic understanding of what Git is and want a better understanding of how to use Git in their work-flow. In order to continue with this tutorial you should:</p>
+    <ol>
+      <li>Download Git</li>
+      <li>Have an account on GitHub</li>
+      <li>Have downloaded a text editor (Atom/Sublime)</li>
+    </ol>
+    <p>Now, let’s git started!</p>
+    <img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" />
+
+    <h2>Git Solo- Personal projects and posting to GitHub</h2>
+    <ol>
+      <li>Create an empty directory </li>
+      <li>Add a file (.css, .js, .ejs) (you can open text editor to make changes if you want)</li>
+      <li>git init</li>
+      <li>git status</li>
+      <li>git add file_name.html (or git add . to add all files)</li>
+      <li>Git commit -m”do NOT forget to comment”</li>
+      <li>Log onto your Github and make a new Github repository</li>
+      <li>Copy remote/push from GitHub page + paste on your terminal.</li>
+      <li>Refresh your GitHub page- should have ALL files loaded!</li>
+      <p>Keep going...If you would like to make changed to your file and re-upload follow these next steps:</p>
+      <li>Make changes on name.html ( add code or comments) on text editor and save files</li>
+      <li>git add</li>
+      <li>git commit -m"  "</li>
+      <li>git push -u origin master</li>
+      <li>Refresh page + voila!</li>
+    </ol>
+
+    <h2>Git Group- working with an immediate team.</h2>
+    <ol>
+      <li>Go to the Github master repository and clone, click clone and copy the URL</li>
+      <li>On your terminal, cd into your desktop (cd into the folder you want to place your clone in) git clone URL then ls to check what is in there</li>
+      <li>cd into your clone folder</li>
+      <li>Git fetch (make sure to ALWAYS fetch before you edit!)</li>
+      <li>Git merge</li>
+      <li>Git branch branch_name (creating your own branch to make edits)</li>
+      <li>Git checkout branch_name</li>
+      <li>Open your text editor and start making edits</li>
+      <li>Git add file_name</li>
+      <li>Git status</li>
+      <li>Git commit -m”do NOT forget to comment”</li>
+      <li>Git push branch_name</li>
+      <p>Warning! This section can get tricky. If someone pushes at the same time as you it will return as a merge conflict. No need to worry, you can now follow these steps:</p>
+      <li>Git fetch (Note: do NOT pull, pull loses content)</li>
+      <li>Git merge (this will show changes on your editor, delete any unwanted marks)</li>
+    </ol>
+
+    <h2>Git Fork</h2>
+    <ol>
+      <li>Go to the Github repository that you’re interested in forking</li>
+      <li>Click fork → this will essentially create a copy of the repository onto your profile where you can make changes and edits without it affects the original repository</li>
+      <li>From the newly copied repository in your profile, click click and copy URL </li>
+      <li>On your terminal, cd into your desktop (cd into the folder you want to place your clone in) git clone URL then ls to check what is in there</li>
+      <li>Git branch branch_name (creating your own branch to make edits)</li>
+      <li>Git checkout branch_name</li>
+      <li>Open your text editor and start making edits</li>
+      <li>Git add file_name</li>
+      <li>Git status</li>
+      <li>Git commit -m”do NOT forget to comment”</li>
+      <li>Git merge master (or git checkout master then git merge <branch>?)</li>
+      <li>Git push -u origin master </li>
+      <p>If you want to incorporate your changes into the original repository:</p>
+      <li>Create a pull request </li>
+      <li>The original owner will see the pull request and if they like it, they will merge the request.</li>
+    </ol>
+
+    <form class="form-inline" method="post" action="/url">
+              <div class="form-group">
+                <label for="exampleInputName2">Name</label>
+                <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail2">Email</label>
+                <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
+              </div>
+              <div class="form-group">
+                <select id="size">
+                  <option value="10">Select Resource</br></option>
+                  <option value="7">Email</br></option>
+                  <option value="10">PDF</br></option>
+                  <option value="20">Link</p></option>
+                </select>
+             </div>
+              <button type="submit" class="btn btn-default">Send</button>
+    </form>
+
+
+<!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
+<!-- JavaScript CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!-- External jQuery file -->
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<% include partials/header %>
+<h1 class="title page-header">Git Collaboration</h1>
+<h5 class= 'p page-styling'><ol>
+  <li>Go to the Github repository that you’re interested in forking</li>
+  <li>Click fork → this will essentially create a copy of the repository onto your profile where you can make changes and edits without it affects the original repository</li>
+  <li>Go to your profile respository and find the newly copied repository.</li>
+  <li>Click clone and copy the URL</li>
+  <li>Open your terminal and go on your Desktop (if you wish to place the clone into another folder, go ahead and cd into that folder as well)<li>
+  <kbd>cd desktop</kbd>
+  <li>Clone the Github repository onto your computer</li>
+  <kbd>git clone <i>URL</i></kbd>
+  <li>Go into the folder that you just cloned</li>
+  <kbd>cd git-group-project</kbd>
+  <li>Open your text editor and make your changes; remember to save</li>
+</ol>
+<p class='p' style="color: red">**Optional: you (and your team) can create branches</p>
+<ol>
+  <li>Add changes to staging area</li>
+  <kbd>git add index.html</kbd>
+  <li>Commit your changes</li>
+  <kbd>git commit -m”do NOT forget to include comment”</kbd>
+  <li>Push your changes</li>
+  <kbd>git push -u origin master</kbd>
+</ol>
+<p>If you want to incorporate your changes into the original repository:</p>
+<ol start='13'>
+  <li>Go on Github and create a pull request</li>
+  <li>The original owner will see the pull request and if they like it, they will merge the request.</li>
+</ol></h5>
+<iframe src="https://giphy.com/embed/l2YWCPLrCIaNc9QT6" width="480" height="358" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/Filmeditor--halloween-ashley-olsen-l2YWCPLrCIaNc9QT6"></a></p>
+<div class='footer'>
+  <div class='links'> Made with ♥ <a href="https://techtonica.org/">@Techtonica</a> by: </div>
+  <div class='links'>
+  <img src="./images/IMG_5650.png" width="200" height="200"/>
+  <img src="./images/IMG_8197.png" width="200" height="200"/>
+  <img src="./images/IMG_3098.png" width="200" height="200"/></br>
+
+  <a href="https://twitter.com/mmed1na?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-count="false">Follow @mmed1na</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+  <a href="https://twitter.com/patersonzaire?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-count="false">Follow @patersonzaire</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+  <a href="https://twitter.com/VivianSan21?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-count="false">Follow @VivianSan21</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+</div>
+<% include partials/footer %>

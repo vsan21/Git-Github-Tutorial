@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Git Going</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Asap|Chelsea+Market" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<!-- CSS CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+<!-- External CSS file  -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="container-fluid no-container">
+      <div class="row">
+        <div class="col-lg-3 col-md-3 col-xs-3">
+          <div class="nav-spacing">
+            <ul class="nav nav-pills nav-stacked flex-column">
+               <li role="presentation" class="active"><a href="/index">Homepage</a></li>
+               <li role="presentation"><a href="/solo">Solo</a></li>
+               <li role="presentation"><a href="/group">Group</a></li>
+               <li role="presentation"><a href="/forking">Collaboration</a></li>
+             </ul>
+           </div>
+             <% if(errors){ %>
+               <ul>
+               <% errors.forEach(function(error) { %>
+                 <li><%= error.msg %></li>
+               <% }) %>
+               </ul>
+             <% } %>
+             <form class="form-group" method="post" action="/url">
+               <div>
+                 <div class="form-group">
+                   <h6>Sign-Up</h6>
+                   <p class="pg-text">Receive Exclusive Git Tutorial Resources</p>
+                 <label for="exampleInputName2"class="form-spacing">Name</label>
+                 <input type="text" name="name" placeholder=" ">
+               </div>
+               <div class="form-group form-spacing">
+                 <label for="exampleInputEmail2">Email</label>
+                 <input type="text" name="email" placeholder=" ">
+               </div>
+               <button type="submit" class="btn btn-primary btn-style form-spacing id='button'">Send</button>
+             </div>
+          </form>
+        </div>
+        <div class="col-lg-9 col-md-9 col-xs-9">
